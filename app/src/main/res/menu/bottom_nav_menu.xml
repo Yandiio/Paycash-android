@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_balance_24px"
+        android:title="@string/beranda"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        />
+
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_multiline_chart_black_24dp"
+        android:title="@string/Notification"
+        app:cnb_iconColor="@color/Blue"/>
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_mail_outline_24px"
+        android:title="@string/Inbox"
+        app:cnb_iconColor="@color/lavender.secondary"/>
+
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_perm_identity_24px"
+        android:title="@string/Profile"
+        app:cnb_iconColor="@color/green_forest.primary"/>
+
+</menu>
+

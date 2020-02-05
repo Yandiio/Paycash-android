@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#fbb117</color>
+    <color name="colorPrimaryDark">#ff4500</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorOrange">@android:color/holo_orange_light</color>
+    <color name="colorStartPink">#FF1493</color>
+    <color name="colorEndPink">#F778A1	</color>
+    <color name="colorStartOrange">#FF4500</color>
+    <color name="colorEndOrange">#FBB117</color>
+    <color name="colorLavender">#E3E4FA</color>
+    <color name="colorTabindicator">#5b5656</color>
+    <color name="colorBlue">#14153D</color>
+    <color name="colorSoftOrange">#ff6f5e</color>
+    <color name="colorWhiteGrey">#F7F7F7</color>
+    <color name="colorThistle">#FCDFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+<!--    Text Color-->
+    <color name="Orange">#FC750D</color>
+    <color name="Black">#000000</color>
+    <color name="Green">#00FF00</color>
+
+<!--    Card Color / Button -->
+    <color name="Blue">#40A9D8</color>
+
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="whiteTextColor">#fff</color>
+
+
+
+
 </resources>
