@@ -12,6 +12,10 @@ import com.example.paycash.Fragment.home.HomeFragment;
 import com.example.paycash.Fragment.inbox.InboxFragment;
 import com.example.paycash.Fragment.profile.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.nawasena.dev.paycash.Fragment.history.HistoryFragment;
+import com.nawasena.dev.paycash.Fragment.home.HomeFragment;
+import com.nawasena.dev.paycash.Fragment.inbox.InboxFragment;
+import com.nawasena.dev.paycash.Fragment.profile.ProfileFragment;
 
 //import com.example.paycash.Fragment.R;
 
