@@ -7,8 +7,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.ToS.PasscodeActivity;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.ToS.PasscodeActivity;
+import com.nawasena.dev.paycash.R;
 
 
 public class PhoneNumberActivity extends AppCompatActivity implements View.OnClickListener {

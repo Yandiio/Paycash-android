@@ -7,8 +7,8 @@ import android.os.Handler;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.Authentication.LoginActivity;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.Authentication.LoginActivity;
+import com.nawasena.dev.paycash.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

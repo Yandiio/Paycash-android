@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.Checkout.CheckoutActivity;
-import com.example.paycash.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.nawasena.dev.paycash.Activities.Checkout.CheckoutActivity;
+import com.nawasena.dev.paycash.R;
 
 import java.util.ArrayList;
 

@@ -9,8 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.paycash.Activities.Checkout.Models.Checkout;
-import com.example.paycash.R;
+
+import com.nawasena.dev.paycash.Activities.Checkout.Models.Checkout;
+import com.nawasena.dev.paycash.R;
 
 import org.ocpsoft.prettytime.PrettyTime;
 

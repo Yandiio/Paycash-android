@@ -6,7 +6,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.R;
+
+import com.nawasena.dev.paycash.R;
 
 public class BarcodeActivity extends AppCompatActivity {
 
