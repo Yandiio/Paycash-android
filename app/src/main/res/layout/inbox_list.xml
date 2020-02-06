@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/inboxList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgInbox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/postbox" />
+
+        <TextView
+            android:id="@+id/txSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imgInbox"
+            android:fontFamily="@font/montserratr"
+            android:singleLine="true"
+            android:text="Pembayaran Berhasil"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txDesk"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txSubject"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/imgInbox"
+            android:fontFamily="@font/montserratl"
+            android:text="Pembayaran SPP bulan Januari 2020
+sebesar Rp.300.000 berhasil"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txDesk"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/txTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingTop="15dp"
+            android:text="@string/date_inbox"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

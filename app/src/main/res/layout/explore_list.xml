@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardExplore"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="139dp"
+    android:layout_height="184dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/linearCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imgExp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/bmw"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tvExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgExp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="Transmisi BMW M4 menggunakan DCT"
+            android:textSize="7dp"
+            android:fontFamily="@font/montserrateb"/>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExp"
+            android:text="BMW kelas M adalah varian termahal di kalangan mobil BMW. Salah satu dari timOtodriver sempat menjajal mobil ini."
+            android:textSize="5dp"
+            android:fontFamily="@font/montserratr"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="44dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/tvDesc"
+            android:background="@drawable/button_rounded_blue"
+            android:text="@string/tvButton"
+            android:textSize="5dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="8dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

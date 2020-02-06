@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Payment Method"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:text="Select one of the payment methods"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <RelativeLayout
+        android:id="@+id/ewalletPay"
+        android:layout_height="86dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/selectGopay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_alignParentRight="true"
+           />
+
+        <ImageView
+            android:id="@+id/CreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/creditcard"
+           />
+
+        <TextView
+            android:id="@+id/titleCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/CreditCard"
+            android:text="E-Wallet"
+            android:textColor="#000000"
+            android:textSize="15dp"
+           />
+
+        <TextView
+            android:id="@+id/detailCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CreditCard"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="44dp"
+            android:text="Pay with E-Wallet like Gopay or M Banking"
+            android:textSize="10dp"
+          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cashPay"
+        android:layout_height="86dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/selectCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+     />
+
+    <ImageView
+        android:id="@+id/MobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/mobilebanking"
+         />
+
+    <TextView
+        android:id="@+id/titleMobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/MobileBanking"
+        android:text="Cash"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/detailMobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Pay Directly with Cash on your hand"
+        android:textSize="10dp"
+        android:layout_toRightOf="@id/MobileBanking"
+        android:layout_marginTop="44dp"
+        app:layout_constraintLeft_toRightOf="@id/MobileBanking"
+        app:layout_constraintTop_toBottomOf="@id/titleMobileBanking" />
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

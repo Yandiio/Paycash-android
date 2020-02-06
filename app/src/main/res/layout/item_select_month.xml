@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jan"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:onClick="setValue"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="20"
+                android:backgroundTint="#52de97"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/jan"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feb"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/jan"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/feb"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/jan"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:text="@string/mar"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/apr"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/feb"
+        android:layout_toRightOf="@id/mar"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/apr"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mei"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mar"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/mei"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jun"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/mar"
+        android:layout_toRightOf="@id/mei"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/juni"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jul"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/mei"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/jul"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ags"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/jun"
+        android:layout_toRightOf="@+id/jul"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/ags"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sep"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/jul"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/sep"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/okt"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/sep"
+        android:layout_below="@+id/ags"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/okt"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nov"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/sep"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/nov"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/des"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/okt"
+        android:layout_toRightOf="@id/nov"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/Orange">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/month12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#52de97"
+                android:ems="20"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/des"
+                android:textSize="19sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="199dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPending"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPending"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_bank"/>
+
+            <TextView
+                android:id="@+id/txPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgPending"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/school_payment"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txDescPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txPending"
+                android:layout_toRightOf="@id/imgPending"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:text="Cicilan Uang DSP"
+                android:textColor="@color/Black"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txTimePending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txDescPending"
+                android:layout_toRightOf="@id/imgPending"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/in_04_00_am_13_july"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txNomPending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/txPending"
+                android:fontFamily="@font/montserratl"
+                android:text="Rp 50.000"
+                android:textColor="@color/Black"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

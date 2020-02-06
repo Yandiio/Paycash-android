@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHistory"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgSent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/gayung"/>
+
+            <TextView
+                android:id="@+id/txSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgSent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/sent"
+                android:fontFamily="@font/montserratl"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgSent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/school_payment"
+                android:textColor="@color/Black"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txDesc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/in_04_00_am_13_july"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserratr"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/txDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jhon Doe commented yor comment on How to produce best fertilizer for"
+                android:fontFamily="@font/montserratl"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/Black"/>
+
+            <TextView
+            android:id="@+id/txCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txDesc"
+            android:layout_marginTop="10dp"
+            android:text="Article"
+            android:textColor="@color/Blue"
+            android:fontFamily="@font/montserratl"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txDesc"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="1 hr ago"
+                android:fontFamily="@font/montserratl"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
