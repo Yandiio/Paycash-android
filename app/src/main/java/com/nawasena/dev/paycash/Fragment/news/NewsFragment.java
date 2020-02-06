@@ -13,8 +13,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 //import com.example.paycash.Fragment.R;
-import com.example.paycash.Activities.News.NewsActivity;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.News.NewsActivity;
+import com.nawasena.dev.paycash.R;
 
 public class NewsFragment extends Fragment {
 

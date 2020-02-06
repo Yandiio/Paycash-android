@@ -9,7 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.paycash.R;
+//import com.dev.R;
+import com.nawasena.dev.paycash.R;
 
 public class    SuccessFragment extends Fragment {
 

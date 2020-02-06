@@ -16,14 +16,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 //import com.example.paycash.Fragment.R;
-import com.example.paycash.Fragment.inbox.Adapter.InboxAdapter;
-import com.example.paycash.Fragment.inbox.Models.Inbox;
-import com.example.paycash.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.nawasena.dev.paycash.Fragment.inbox.Adapter.InboxAdapter;
+import com.nawasena.dev.paycash.Fragment.inbox.Models.Inbox;
+import com.nawasena.dev.paycash.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,7 +67,7 @@ public class InboxFragment extends Fragment {
                     Inbox inbox = snapshot.getValue(Inbox.class);
                     dataInbox.add(inbox);
                 }
-                adapter = new InboxAdapter(getActivity(), dataInbox);
+                adapter = new InboxAdapter(getActivity(),dataInbox);
                 recyclerView.setAdapter(adapter);
             }
 

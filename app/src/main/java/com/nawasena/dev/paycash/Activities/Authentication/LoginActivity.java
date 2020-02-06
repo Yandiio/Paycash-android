@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.MainFragment;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.MainFragment;
+import com.nawasena.dev.paycash.R;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

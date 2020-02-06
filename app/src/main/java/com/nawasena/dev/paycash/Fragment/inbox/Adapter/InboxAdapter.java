@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.paycash.Fragment.inbox.Models.Inbox;
 import com.example.paycash.R;
+import com.nawasena.dev.paycash.Fragment.inbox.Models.Inbox;
 
 import java.util.ArrayList;
 import java.util.List;

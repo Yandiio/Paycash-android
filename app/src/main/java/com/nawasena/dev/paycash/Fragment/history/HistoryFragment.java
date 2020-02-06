@@ -10,10 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.paycash.Fragment.history.Adapter.RiwayatPagerAdapter;
-import com.example.paycash.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
+import com.nawasena.dev.paycash.Fragment.history.Adapter.RiwayatPagerAdapter;
+import com.nawasena.dev.paycash.R;
 
 import java.util.ArrayList;
 

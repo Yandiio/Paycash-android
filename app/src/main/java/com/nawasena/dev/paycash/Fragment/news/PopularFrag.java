@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.paycash.R;
-
+//import com..paycash.R;
+import com.nawasena.dev.paycash.R;
 
 
 public class PopularFrag extends Fragment {

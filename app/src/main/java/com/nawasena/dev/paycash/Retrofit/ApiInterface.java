@@ -1,6 +1,6 @@
 package com.nawasena.dev.paycash.Retrofit;
 
-import com.example.paycash.Activities.News.Models.News;
+import com.nawasena.dev.paycash.Activities.News.Models.News;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
