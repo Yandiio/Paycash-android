@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/eastwood_waiting" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/tidak_ada_transaksi_tertunda"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrateb"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="\t \t \t  Sepi aja nih yang Tertunda \n  Coba Cek Ke sebelah Menu Success"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserratr"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>

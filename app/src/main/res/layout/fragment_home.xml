@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+        tools:ignore="MissingConstraints">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:ems="9"
+                    android:fontFamily="@font/montserrateb"
+                    android:text="PayCash"
+                    android:textColor="@color/Orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgNotif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_path_2" />
+
+                <ImageView
+                    android:id="@+id/imgHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_path_417" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/user" />
+            </LinearLayout>
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPay"
+            android:layout_width="350dp"
+            android:layout_height="155dp"
+            app:cardBackgroundColor="@color/Blue"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/constraintCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrateb"
+                    android:paddingTop="10dp"
+                    android:text="Pay Now"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <GridLayout
+                    android:id="@+id/gridMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleCard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:columnCount="4"
+                    android:rowCount="2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleCard">
+
+                    <ImageView
+                        android:id="@+id/imgPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/money_transfer" />
+
+                    <ImageView
+                        android:id="@+id/imgTopup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/topup" />
+
+                    <ImageView
+                        android:id="@+id/imgReq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/send" />
+
+                    <ImageView
+                        android:id="@+id/imgMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/ic_add_to_photos_white_35dp" />
+
+                    <TextView
+                        android:id="@+id/tvPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="Pay or Send"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTopup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="Add Money"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvReq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="Request"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="More"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9dp"
+                        android:textStyle="bold" />
+                </GridLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardPay"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardPay">
+
+        <TextView
+            android:id="@+id/titleSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrateb"
+            android:text="Send Money To"
+            android:textColor="@color/Black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/txViewContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrateb"
+            android:text="@string/view_all"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleSend"
+            app:layout_constraintRight_toRightOf="@id/constraintSend" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContact"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="25dp"
+        android:foregroundGravity="center_horizontal"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintSend">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/imgAdd"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/passbook" />
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/montserratr"
+                    android:gravity="center_horizontal"
+                    android:text="Add"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/linearAdd"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardContact">
+
+
+        <TextView
+            android:id="@+id/titleExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrateb"
+            android:text="@string/explore"
+            android:textColor="@color/Black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txViewExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrateb"
+            android:text="@string/view_all"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleExplore"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="25dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/constraintExplore">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

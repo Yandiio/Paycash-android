@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="140dp"
+                    android:src="@drawable/boi"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratr"
+                    android:gravity="center"
+                    android:text="@string/title_home"
+                    android:textColor="@color/Black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeMenu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txName">
+
+                    <ImageView
+                        android:id="@+id/imgMenu1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/auth1" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgMenu1"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="Authenticate"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeMenu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@id/relativeMenu1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txName">
+
+                    <ImageView
+                        android:id="@+id/imgMenu2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/auth2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgMenu2"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserratr"
+                        android:text="Authenticate"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/header">
+
+                <TextView
+                    android:id="@+id/txHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="9"
+                    android:fontFamily="@font/montserratr"
+                    android:text="History"
+                    android:textColor="@color/Black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/txMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/montserratr"
+                    android:text="See More"
+                    android:textColor="@color/Green"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/linearHistory">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="@dimen/_18sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:drawableLeft="@drawable/notif"
+                            android:fontFamily="@font/montserratr"
+                            android:text="@string/Notifications"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_17sdp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    android:foreground="?android:selectableItemBackground"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:layout_height="90dp"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:padding="@dimen/_18sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:fontFamily="@font/montserratr"
+                            android:textSize="@dimen/_17sdp"
+                            android:text="@string/Pengaturan"
+                            android:drawableLeft="@drawable/settings"
+                            />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    android:foreground="?android:selectableItemBackground"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:layout_height="90dp"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:fontFamily="@font/montserratr"
+                            android:textSize="@dimen/_17sdp"
+                            android:padding="@dimen/_17sdp"
+                            android:text="@string/Notification"
+                            android:drawableLeft="@drawable/notif"
+                            />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    android:foreground="?android:selectableItemBackground"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:layout_height="90dp"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:padding="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:fontFamily="@font/montserratr"
+                            android:textSize="@dimen/_15sdp"
+                            android:text="@string/logout"
+                            android:drawableLeft="@drawable/logout"
+                            />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

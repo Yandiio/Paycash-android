@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/bg_gradien"
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:background="@drawable/gradientpink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="30dp"
+                android:text="Settings"
+                android:textColor="#fff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/path_2"/>
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="125dp"
+                android:text="Muhammad Yandi F"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/nama"
+                android:layout_marginTop="10dp"
+                android:text="1718117200"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="20dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/notif"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ligt_bulb_on"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/notif"
+                    android:text="Notification"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="80dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/topup"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/upload"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/topup"
+                    android:text="Top Up Balance"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="70dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/payment"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/stats_pie_chart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/payment"
+                    android:text="Payment Activity"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="70dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/inbox"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/upload" />
+                <TextView
+                    android:id="@+id/jdl_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/inbox"
+                    android:text="Inbox"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
