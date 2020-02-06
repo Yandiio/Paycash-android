@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "210848244353",
+    "firebase_url": "https://appspay-f6fb7.firebaseio.com",
+    "project_id": "appspay-f6fb7",
+    "storage_bucket": "appspay-f6fb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210848244353:android:34df802f154b0f28b16380",
+        "android_client_info": {
+          "package_name": "com.example.paycash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210848244353-60l8f91i8mkd04t3n1s19hr69uannp3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paycash",
+            "certificate_hash": "8a372c9e04448884cbb89ef373176284dd21e098"
+          }
+        },
+        {
+          "client_id": "210848244353-7igi0i0t66906c88c0uv5rhs30o3sdmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paycash",
+            "certificate_hash": "6da1a5f810ce4d94fc267b403e540d9e22a72053"
+          }
+        },
+        {
+          "client_id": "210848244353-67ucjvafi78493o92quksvc6j1v8hqml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFkDJCuVCfmfu3xOItuvoEDxrNYfbU_co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210848244353-67ucjvafi78493o92quksvc6j1v8hqml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210848244353:android:5a46ac1479f1100db16380",
+        "android_client_info": {
+          "package_name": "com.nawasena.dev.paycash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210848244353-l8oi5klqaagfo2ft0jarb1neuak56faj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nawasena.dev.paycash",
+            "certificate_hash": "8a372c9e04448884cbb89ef373176284dd21e098"
+          }
+        },
+        {
+          "client_id": "210848244353-67ucjvafi78493o92quksvc6j1v8hqml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFkDJCuVCfmfu3xOItuvoEDxrNYfbU_co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210848244353-67ucjvafi78493o92quksvc6j1v8hqml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
