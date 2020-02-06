@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nawasena.dev.paycash" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nawasena.dev.paycash">
 
     <application
         android:allowBackup="true"
@@ -8,6 +9,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" ></application>
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Activities.TopUpActivity"></activity>
+        <activity android:name=".Activities.Barcode.BarcodeActivity"></activity>
+        <activity android:name=".Activities.Checkout.CheckoutActivity" />
+        <activity android:name=".Activities.SelectMonthActivity" />
+        <activity android:name=".Activities.News.NewsActivity" />
+        <activity android:name=".Activities.News.DetailNews"></activity>
+        <activity android:name=".Activities.ToS.PasscodeActivity" />
+        <activity android:name=".Activities.PhoneNumberActivity" />
+        <activity android:name=".Activities.Authentication.LoginActivity">
+        </activity>
+        <activity android:name=".Fragment.profile.ProfileFragment" />
+        <activity android:name=".Fragment.history.HistoryFragment" />
+        <activity android:name=".Fragment.home.HomeFragment" />
+
+        <activity android:name=".Activities.ToS.TermsActivity" />
+        <activity android:name=".MainFragment" />
+        <activity android:name=".Activities.Authentication.RegisterActivity" />
+        <activity android:name=".Activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReminderActivity">
+
+        </activity>
+    </application>
 
 </manifest>
