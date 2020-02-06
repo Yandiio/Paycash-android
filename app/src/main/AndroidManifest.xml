@@ -19,8 +19,7 @@
         <activity android:name=".Activities.News.DetailNews"></activity>
         <activity android:name=".Activities.ToS.PasscodeActivity" />
         <activity android:name=".Activities.PhoneNumberActivity" />
-        <activity android:name=".Activities.Authentication.LoginActivity">
-        </activity>
+        <activity android:name=".Activities.Authentication.LoginActivity"></activity>
         <activity android:name=".Fragment.profile.ProfileFragment" />
         <activity android:name=".Fragment.history.HistoryFragment" />
         <activity android:name=".Fragment.home.HomeFragment" />
