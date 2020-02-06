@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.News.NewsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/montserrateb"
+        android:text="@string/News"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search_background_et"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@drawable/search_background_et"
+            android:hint="Search"
+            android:paddingLeft="@dimen/_26sdp"
+            android:textColorHint="@color/whiteTextColor" />
+
+        <Button
+            android:id="@+id/btn_search_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/search_background_et"
+            android:drawableRight="@drawable/search"
+            android:paddingRight="30dp"
+            android:textColor="@color/whiteTextColor" />
+
+    </GridLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/refreshList"
+        android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
