@@ -12,10 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.paycash.Activities.News.DetailNews;
-import com.example.paycash.Activities.News.Models.Articles;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.News.DetailNews;
+import com.nawasena.dev.paycash.Activities.News.Models.Articles;
+import com.nawasena.dev.paycash.R;
 import com.squareup.picasso.Picasso;
 
 import org.ocpsoft.prettytime.PrettyTime;
@@ -56,7 +55,7 @@ public class NewsCardHolderAdapter extends RecyclerView.Adapter<NewsCardHolderAd
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext,DetailNews.class);
+                Intent intent = new Intent(mContext, DetailNews.class);
                 intent.putExtra("title",a.getTitle());
                 intent.putExtra("source",a.getSource().getName());
                 intent.putExtra("time",dateTime(a.getPublishedAt()));

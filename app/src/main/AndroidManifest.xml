@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nawasena.dev.paycash">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -19,19 +18,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Activities.TopUpActivity"></activity>
-        <activity android:name=".Activities.Barcode.BarcodeActivity"></activity>
+        <activity android:name=".Activities.SendMoney.AmountMoneyActivity"></activity>
+        <activity android:name=".Activities.SendMoney.SendMoneyActivity" />
+        <activity android:name=".Activities.TopUpActivity" />
+        <activity android:name=".Activities.Barcode.BarcodeActivity" />
         <activity android:name=".Activities.Checkout.CheckoutActivity" />
         <activity android:name=".Activities.SelectMonthActivity" />
         <activity android:name=".Activities.News.NewsActivity" />
-        <activity android:name=".Activities.News.DetailNews"></activity>
+        <activity android:name=".Activities.News.DetailNews" />
         <activity android:name=".Activities.ToS.PasscodeActivity" />
         <activity android:name=".Activities.PhoneNumberActivity" />
-        <activity android:name=".Activities.Authentication.LoginActivity"></activity>
+        <activity android:name=".Activities.Authentication.LoginActivity" />
         <activity android:name=".Fragment.profile.ProfileFragment" />
         <activity android:name=".Fragment.history.HistoryFragment" />
         <activity android:name=".Fragment.home.HomeFragment" />
-
         <activity android:name=".Activities.ToS.TermsActivity" />
         <activity android:name=".MainFragment" />
         <activity android:name=".Activities.Authentication.RegisterActivity" />
@@ -42,9 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReminderActivity">
-
-        </activity>
+        <activity android:name=".ReminderActivity" />
     </application>
 
 </manifest>

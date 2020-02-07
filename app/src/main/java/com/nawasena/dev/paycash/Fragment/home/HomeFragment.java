@@ -14,13 +14,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.paycash.Activities.News.NewsActivity;
-import com.example.paycash.Fragment.home.Adapter.NewsCardHolderAdapter;
-import com.example.paycash.Retrofit.ApiClient;
-import com.example.paycash.Activities.News.Models.Articles;
-import com.example.paycash.Activities.News.Models.News;
-import com.example.paycash.R;
-import com.example.paycash.material.ModalBottomSheet;
+
+import com.nawasena.dev.paycash.Activities.News.Models.Articles;
+import com.nawasena.dev.paycash.Activities.News.Models.News;
+import com.nawasena.dev.paycash.Activities.News.NewsActivity;
+import com.nawasena.dev.paycash.Activities.SendMoney.SendMoneyActivity;
+import com.nawasena.dev.paycash.Activities.TopUpActivity;
+import com.nawasena.dev.paycash.Fragment.home.Adapter.NewsCardHolderAdapter;
+import com.nawasena.dev.paycash.R;
+import com.nawasena.dev.paycash.Retrofit.ApiClient;
+import com.nawasena.dev.paycash.material.ModalBottomSheet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +36,7 @@ import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
 
-    public ImageView img1,img2,img3,img4,more,addMoney;
+    public ImageView img1,img2,img3,img4;
     private TextView txtView;
     RecyclerView recyclerView;
     final String API_KEY = "62ca3ccb59494c8ba61e86151b116624";
@@ -45,7 +48,7 @@ public class HomeFragment extends Fragment {
         img1 = v.findViewById(R.id.imgPay);
         img2 = v.findViewById(R.id.imgTopup);
         img3 = v.findViewById(R.id.imgReq);
-        img4 = v.findViewById(R.id.imgMore);
+        img4 = v.findViewById(R.id.imgTransfer);
         txtView = v.findViewById(R.id.txViewExplore);
 
         recyclerView = v.findViewById(R.id.recyclerExplore);
@@ -58,7 +61,7 @@ public class HomeFragment extends Fragment {
         txtView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),NewsActivity.class);
+                Intent intent = new Intent(getActivity(), NewsActivity.class);
                 startActivity(intent);
             }
         });
@@ -71,6 +74,32 @@ public class HomeFragment extends Fragment {
                  modalBottomSheet.show(getFragmentManager(),"ExampleTagBottomDialog");;
             }
         });
+
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent n = new Intent(getActivity(), TopUpActivity.class);
+                startActivity(n);
+            }
+        });
+
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent n = new Intent(getActivity(), TopUpActivity.class);
+                startActivity(n);
+            }
+        });
+
+        img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent n = new Intent(getActivity(), SendMoneyActivity.class);
+                startActivity(n);
+            }
+        });
+
+
 
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);

@@ -19,20 +19,17 @@
     <color name="gradient_start_color">#4c84ff</color>
     <color name="gradient_end_color">#18a3fe</color>
 
-<!--    Text Color-->
+    <!--    Text Color-->
     <color name="Orange">#FC750D</color>
     <color name="Black">#000000</color>
     <color name="Green">#00FF00</color>
 
-<!--    Card Color / Button -->
+    <!--    Card Color / Button -->
     <color name="Blue">#40A9D8</color>
 
 
     <!--colors for light mode-->
     <color name="contentTextColor">#020000</color>
     <color name="whiteTextColor">#fff</color>
-
-
-
 
 </resources>

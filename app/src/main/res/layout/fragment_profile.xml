@@ -23,7 +23,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/header"
                 android:layout_width="match_parent"
-                android:layout_height="265dp"
+                android:layout_height="245dp"
                 android:background="@drawable/bg_rounded_white"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -34,10 +34,9 @@
                     android:id="@+id/imgProfile"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:layout_marginStart="140dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="140dp"
+                    android:layout_marginTop="36dp"
                     android:src="@drawable/boi"
+                    app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -257,7 +256,7 @@
                             android:textSize="@dimen/_17sdp"
                             android:padding="@dimen/_17sdp"
                             android:text="@string/Notification"
-                            android:drawableLeft="@drawable/notif"
+                            android:drawableLeft="@drawable/help"
                             />
 
                     </RelativeLayout>
@@ -277,6 +276,7 @@
 
                     <RelativeLayout
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
                         android:layout_width="match_parent">
 
                         <TextView
@@ -296,9 +296,6 @@
 
 
                 </androidx.cardview.widget.CardView>
-
-
-
 
             </LinearLayout>
 
