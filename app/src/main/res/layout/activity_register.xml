@@ -16,11 +16,6 @@
         android:background="@drawable/headerasr"
         android:clickable="true"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
         <ImageView
             android:id="@+id/imgLogo"
             android:layout_width="300dp"
@@ -149,11 +144,5 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/montserrateb"/>
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
