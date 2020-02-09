@@ -11,9 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.Barcode.BarcodeActivity;
-import com.example.paycash.R;
-import com.example.paycash.Retrofit.Constant;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.midtrans.sdk.corekit.callback.TransactionFinishedCallback;
@@ -26,6 +23,9 @@ import com.midtrans.sdk.corekit.models.UserAddress;
 import com.midtrans.sdk.corekit.models.UserDetail;
 import com.midtrans.sdk.corekit.models.snap.TransactionResult;
 import com.midtrans.sdk.uikit.SdkUIFlowBuilder;
+import com.nawasena.dev.paycash.Activities.Barcode.BarcodeActivity;
+import com.nawasena.dev.paycash.R;
+import com.nawasena.dev.paycash.Retrofit.Constant;
 
 import java.util.ArrayList;
 

@@ -9,9 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.paycash.Fragment.inbox.Models.Inbox;
-import com.example.paycash.R;
 import com.nawasena.dev.paycash.Fragment.inbox.Models.Inbox;
+import com.nawasena.dev.paycash.R;
 
 import java.util.ArrayList;
 import java.util.List;

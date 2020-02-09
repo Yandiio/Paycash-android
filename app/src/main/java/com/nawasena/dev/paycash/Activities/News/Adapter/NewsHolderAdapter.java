@@ -12,9 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.paycash.Activities.News.DetailNews;
-import com.example.paycash.Activities.News.Models.Articles;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.News.DetailNews;
 import com.nawasena.dev.paycash.Activities.News.Models.Articles;
 import com.nawasena.dev.paycash.R;
 import com.squareup.picasso.Picasso;

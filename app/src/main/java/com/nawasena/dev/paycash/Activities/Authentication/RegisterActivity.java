@@ -27,6 +27,9 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.nawasena.dev.paycash.Activities.PhoneNumberActivity;
+import com.nawasena.dev.paycash.MainFragment;
+import com.nawasena.dev.paycash.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

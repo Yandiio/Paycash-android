@@ -11,11 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.paycash.Activities.News.Adapter.NewsHolderAdapter;
-import com.example.paycash.Activities.News.Models.Articles;
-import com.example.paycash.Activities.News.Models.News;
-import com.example.paycash.R;
-import com.example.paycash.Retrofit.ApiClient;
+
+import com.nawasena.dev.paycash.Activities.News.Adapter.NewsHolderAdapter;
+import com.nawasena.dev.paycash.Activities.News.Models.Articles;
+import com.nawasena.dev.paycash.Activities.News.Models.News;
+import com.nawasena.dev.paycash.R;
+import com.nawasena.dev.paycash.Retrofit.ApiClient;
 
 import java.util.ArrayList;
 import java.util.List;

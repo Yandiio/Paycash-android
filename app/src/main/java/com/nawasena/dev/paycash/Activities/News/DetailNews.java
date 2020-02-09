@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.R;
 import com.squareup.picasso.Picasso;
 
 public class DetailNews extends AppCompatActivity {

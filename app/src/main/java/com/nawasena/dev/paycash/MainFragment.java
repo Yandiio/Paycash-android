@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.nawasena.dev.paycash.Fragment.history.HistoryFragment;
 import com.nawasena.dev.paycash.Fragment.home.HomeFragment;
@@ -25,8 +26,17 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fragment);
+
+        loadFragment(new HomeFragment());
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(this);
+
+        if(savedInstanceState != null){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.nav_host_view, new HomeFragment())
+                    .commit();
+        }
     }
 
 
@@ -45,6 +55,9 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
                 break;
             case R.id.navigation_profile:
                 fragment = new ProfileFragment();
+                break;
+            default:
+                fragment = new HomeFragment();
                 break;
 
         }

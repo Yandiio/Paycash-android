@@ -83,5 +83,6 @@
     <string name="isi">Mau isi berapa hari ini?</string>
     <string name="tranaction_secure">All your transaction are secure and fast</string>
     <string name="top_up">Top Up</string>
+    <string name="pay_now">Pay Now</string>
 
 </resources>

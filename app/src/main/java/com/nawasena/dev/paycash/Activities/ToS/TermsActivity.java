@@ -7,9 +7,9 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.Authentication.RegisterActivity;
-import com.example.paycash.MainFragment;
-import com.example.paycash.R;
+import com.nawasena.dev.paycash.Activities.Authentication.RegisterActivity;
+import com.nawasena.dev.paycash.MainFragment;
+import com.nawasena.dev.paycash.R;
 
 public class TermsActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,3 +38,4 @@ public class TermsActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 }
+
