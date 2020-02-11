@@ -244,7 +244,7 @@
                         android:background="@color/black"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8dp"/>
 
                     <TextView
                         android:id="@+id/tv_ttl"
@@ -335,11 +335,30 @@
                         android:textSize="14dp"
                         android:fontFamily="@font/montserratr"
                         android:textColor="@color/black" />
-
-
                 </RelativeLayout>
-
             </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/btn_fav"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/button_favorit"
+                android:layout_below="@id/card4"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_favorite_white_24dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_help"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/btn_fav"
+                android:background="@drawable/button_help"
+                android:layout_below="@id/card4"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/ic_help_white_24dp"/>
+
 
 
 
