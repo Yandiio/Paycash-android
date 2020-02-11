@@ -84,5 +84,10 @@
     <string name="tranaction_secure">All your transaction are secure and fast</string>
     <string name="top_up">Top Up</string>
     <string name="pay_now">Pay Now</string>
+    <string name="desc_no_internet">Please check your connection status and try again</string>
+    <string name="username">Username</string>
+    <string name="tvName">Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="simpan_data">Simpan</string>
 
 </resources>

@@ -2,6 +2,7 @@ package com.nawasena.dev.paycash;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import com.nawasena.dev.paycash.Fragment.history.HistoryFragment;
 import com.nawasena.dev.paycash.Fragment.home.HomeFragment;
 import com.nawasena.dev.paycash.Fragment.inbox.InboxFragment;
 import com.nawasena.dev.paycash.Fragment.profile.ProfileFragment;
+import com.nawasena.dev.paycash.Handler.ConnectionHandler;
 
 //import com.example.paycash.Fragment.R;
 
@@ -36,6 +38,10 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
                     .beginTransaction()
                     .add(R.id.nav_host_view, new HomeFragment())
                     .commit();
+        }
+
+        if(new ConnectionHandler(this).getInternetStatus()){
+            Toast.makeText(this, "INTERNET VALIDATION PASSED", Toast.LENGTH_SHORT).show();
         }
     }
 

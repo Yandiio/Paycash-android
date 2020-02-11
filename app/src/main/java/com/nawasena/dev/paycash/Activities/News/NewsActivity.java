@@ -15,6 +15,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.nawasena.dev.paycash.Activities.News.Adapter.NewsHolderAdapter;
 import com.nawasena.dev.paycash.Activities.News.Models.Articles;
 import com.nawasena.dev.paycash.Activities.News.Models.News;
+import com.nawasena.dev.paycash.Handler.ConnectionHandler;
 import com.nawasena.dev.paycash.R;
 import com.nawasena.dev.paycash.Retrofit.ApiClient;
 
@@ -62,7 +63,10 @@ public class NewsActivity extends AppCompatActivity {
                 }
              }
          });
- 
+
+        if(new ConnectionHandler(this).getInternetStatus()){
+            Toast.makeText(this, "INTERNET VALIDATION PASSED", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void retrieveData(String Query,String Country,String apiKey){

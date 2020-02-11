@@ -38,7 +38,7 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     public ImageView img1, img2, img3, img4;
-    private ShimmerFrameLayout shimmerFrameLayout;
+//    private ShimmerFrameLayout shimmerFrameLayout;
     private TextView txtView;
     RecyclerView recyclerView;
     final String API_KEY = "62ca3ccb59494c8ba61e86151b116624";
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         txtView = v.findViewById(R.id.txViewExplore);
 
         recyclerView = v.findViewById(R.id.recyclerExplore);
-        shimmerFrameLayout = v.findViewById(R.id.shimmer_frame);
+//        shimmerFrameLayout = v.findViewById(R.id.shimmer_frame);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         final String Country = getCountry();
 
@@ -126,8 +126,8 @@ public class HomeFragment extends Fragment {
                     adapter = new NewsCardHolderAdapter(getActivity(), articles);
                     recyclerView.setAdapter(adapter);
 
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerFrameLayout.setVisibility(View.GONE);
+//                    shimmerFrameLayout.stopShimmer();
+//                    shimmerFrameLayout.setVisibility(View.GONE);
                 }
 
             }
@@ -143,12 +143,12 @@ public class HomeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        shimmerFrameLayout.startShimmer();
+//        shimmerFrameLayout.startShimmer();
     }
 
     @Override
     public void onPause() {
-        shimmerFrameLayout.stopShimmer();
+//        shimmerFrameLayout.stopShimmer();
         super.onPause();
     }
 

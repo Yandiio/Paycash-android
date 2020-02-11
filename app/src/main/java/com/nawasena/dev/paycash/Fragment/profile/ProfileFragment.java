@@ -21,13 +21,13 @@ import com.squareup.picasso.Picasso;
 public class ProfileFragment extends Fragment {
     private Uri pickedImgUri = null;
 
-    TextView name,email,google;
+    TextView name, email, google;
     FirebaseAuth firebaseAuth;
     ImageView imgView;
     FirebaseUser firebaseUser;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View views = inflater.inflate(R.layout.fragment_profile,container,false);
+        View views = inflater.inflate(R.layout.fragment_profile, container, false);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
@@ -36,12 +36,19 @@ public class ProfileFragment extends Fragment {
         email = (TextView) views.findViewById(R.id.txtEmail);
         imgView = (ImageView) views.findViewById(R.id.imgProfile);
 
-        name.setText(firebaseUser.getDisplayName());
-        email.setText(firebaseUser.getEmail());
-        Picasso.get()
-                .load(firebaseUser.getPhotoUrl())
-                .into(imgView);
 
+        if (imgView != null) {
+            name.setText(firebaseUser.getDisplayName());
+            email.setText(firebaseUser.getEmail());
+            Picasso.get()
+                    .load(firebaseUser.getPhotoUrl())
+                    .into(imgView);
+
+        } else {
+            String nama = "users";
+            name.setText(nama);
+
+        }
         return views;
     }
 

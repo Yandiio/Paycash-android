@@ -35,10 +35,9 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="273dp"
+        android:layout_marginLeft="24dp"
         android:text="Masukan Nominal"
         app:layout_constraintBottom_toTopOf="@+id/etAmountMoney"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -155,15 +154,15 @@
         android:id="@+id/btnTopUp"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/bgbtntopup"
         android:text="@string/top_up"
         android:textAllCaps="false"
         android:textColor="@color/whiteTextColor"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

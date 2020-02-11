@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/undraw_newsletter_vovu"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_subjek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/img"
+        android:text="Sukses Verifikasi"
+        android:fontFamily="@font/montserratr"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subjek"
+        android:layout_marginLeft="25dp"
+        android:text="26 Januari 2020, 13.01 WIB"
+        android:fontFamily="@font/montserratr"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_waktu"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Email anda berhasil diverifikasi. Kamu dapat menggunakan email ini untuk
+memulihkan akunmu, atau atur pin baru ketika kamu lupa"
+        android:fontFamily="@font/montserratr"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        />
+
+
+</RelativeLayout>

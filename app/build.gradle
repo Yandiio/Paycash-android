@@ -57,6 +57,7 @@ dependencies {
     implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.github.TutorialsAndroid:GButton:v1.0.19'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 
 }
 apply plugin: 'com.google.gms.google-services'
